@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "recommendation-system"
+version = "0.1.0"
+description = "Real-time hybrid recommendation engine"
+authors = ["Your Name <you@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = {extras = ["standard"], version = "^0.30.6"}
+pandas = "^2.2.2"
+numpy = "^1.26.0"
+# For data download
+requests = "^2.32.3" 
+# For extracting data
+python-decouple = "^3.8"
+# Vector DB and Embeddings
+faiss-cpu = "^1.8.0"
+sentence-transformers = "^3.0.0"
+scikit-surprise = "^1.1.4"  
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fraud-detection"
+version = "0.1.0"
+description = "Production-ready fraud detection API"
+authors = ["Your Name <you@example.com>"]
+package-mode = false  # <--- ADD THIS LINE HERE
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = {extras = ["standard"], version = "^0.30.6"}
+xgboost = "^2.1.1"
+lightgbm = "^4.5.0"
+pandas = "^2.2.2"
+scikit-learn = "^1.5.2"
+evidently = "^0.4.37"
+pydantic = "^2.9.2"
+prometheus-client = "^0.20.0"
+joblib = "^1.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
