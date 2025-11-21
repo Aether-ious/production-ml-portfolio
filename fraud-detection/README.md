@@ -11,13 +11,3 @@ Detect fraudulent transactions in heavily imbalanced data (0.3% fraud rate). Mus
 - API latency: 12ms p99
 - Data drift detected on TransactionAmt & card features after simulating 30-day shift
 
-## Architecture
-```mermaid
-graph TD
-    A[Incoming Transaction] --> B(FastAPI Endpoint)
-    B --> C[Feature Engineering]
-    C --> D[XGBoost + LightGBM Ensemble]
-    D --> E[Prediction + Confidence]
-    E --> F[Evidently Drift Check]
-    F --> G[Prometheus Metrics]
-    G --> H[Grafana Dashboard (optional)]
