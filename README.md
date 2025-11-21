@@ -76,28 +76,4 @@ A "Lead Engineer" level MLOps platform designed for the banking sector. This is 
 
 ---
 
-## ⚡ Quick Start Guide
-
-This repository uses a **Monorepo** structure. Each project is isolated with its own dependencies.
-
-### Prerequisites
-* Python 3.11+
-* Poetry (`pip install poetry`)
-* Docker (Optional)
-
-### Setup
-Each project is self-contained. To run a specific microservice, navigate to its folder (e.g., `cd sentinel-credit-risk`) and follow the local `README.md` instructions to install dependencies via Poetry and launch the API.
-
----
-
-
-## 📫 Contact
-
-I am currently open to **Senior ML Engineer** and **Data Scientist** roles.
-
-* **LinkedIn:** [Link to your Profile]
-* **Email:** [you@email.com]
-* **Portfolio:** [Link to your Website]
-
----
 *Built with ❤️, ☕, and Python.*
